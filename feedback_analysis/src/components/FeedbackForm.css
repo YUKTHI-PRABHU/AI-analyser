@@ -1,0 +1,97 @@
+/* FeedbackForm.css */
+
+/* Container to wrap the entire form and the fixed text */
+.feedback-container {
+    position: relative;
+}
+
+/* Positioning the text in the top-right corner */
+.feedback-text {
+    position: fixed;  /* Fixes the position relative to the viewport */
+    top: 20px;        /* Distance from the top of the page */
+    right: 20px;      /* Distance from the right of the page */
+    font-size: 18px;
+    color: #fff;      /* White color for the text */
+    font-weight: bold;
+    z-index: 10;      /* Ensure the text is above other elements */
+    background-color: rgba(0, 0, 0, 0.5); /* Optional background for contrast */
+    padding: 10px;    /* Optional padding for better spacing */
+    border-radius: 5px; /* Optional rounded corners */
+}
+
+/* Styles for the feedback form */
+.feedback-form {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    max-width: 600px;
+    margin: 30px auto;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.feedback-form:hover {
+    transform: scale(1.02);
+}
+
+.feedback-form h2 {
+    font-size: 28px;
+    color: #00f1a6;
+    margin-bottom: 20px;
+    font-weight: 600;
+    text-shadow: 0px 0px 10px rgba(0, 241, 166, 0.8);
+}
+
+.feedback-form textarea {
+    width: 100%;
+    height: 150px;
+    padding: 20px;
+    font-size: 16px;
+    border: 2px solid #00f1a6;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    resize: none;
+    outline: none;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+    font-family: 'Roboto', sans-serif;
+}
+
+.feedback-form textarea:focus {
+    border-color: #00e5e5;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.feedback-form button {
+    background-color: #00f1a6;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.feedback-form button:hover {
+    background-color: #00e5e5;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.feedback-form button:focus {
+    outline: none;
+}
+
+.feedback-form p {
+    font-size: 14px;
+    color: #ddd;
+    margin-top: 10px;
+}
